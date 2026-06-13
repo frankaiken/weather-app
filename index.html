@@ -7,27 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <h1>Weather Dashboard</h1>
+        <div class="dashboard-container">
+        <h1>Global Weather Pinboard</h1>
         
         <div class="search-box">
-            <input type="text" id="cityInput" placeholder="Enter city name...">
-            <button id="searchBtn">Search</button>
+            <input type="text" id="cityInput" placeholder="Pin a city (e.g. Paris, Tokyo)...">
+            <button id="searchBtn">Pin City</button>
         </div>
 
         <div id="errorMessage" class="error-hide"></div>
 
-        <div id="weatherDisplay" class="weather-card hidden">
-            <h2 id="cityName">City Name</h2>
-            <div class="weather-main">
-                <span id="temperature">--°C</span>
-                <span id="description">Clear Sky</span>
-            </div>
-            <div class="weather-details">
-                <p>Humidity: <span id="humidity">--%</span></p>
-                <p>Wind Speed: <span id="wind">-- m/s</span></p>
-            </div>
-        </div>
+        <div id="weatherGrid" class="weather-grid"></div>
     </div>
 
     <script src="components/WeatherAPI.js"></script>
