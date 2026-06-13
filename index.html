@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Weather Dashboard</h1>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="errorMessage" class="error-hide"></div>
+
+        <div id="weatherDisplay" class="weather-card hidden">
+            <h2 id="cityName">City Name</h2>
+            <div class="weather-main">
+                <span id="temperature">--°C</span>
+                <span id="description">Clear Sky</span>
+            </div>
+            <div class="weather-details">
+                <p>Humidity: <span id="humidity">--%</span></p>
+                <p>Wind Speed: <span id="wind">-- m/s</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="components/WeatherAPI.js"></script>
+    <script src="components/Interface.js"></script>
+    <script src="components/App.js"></script>
+</body>
+</html>
